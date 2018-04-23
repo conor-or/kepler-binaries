@@ -2,7 +2,9 @@
 
 In this project we'll hunt for planets orbiting binary stars using the publicly available Kepler data. We've got the data for __50 eclipsing binary stars__. Some number of these binary stars are known to have planets: _it's up to you to find out which!_
 
-Read the below for an overview of the science. To get started with the data itself have a look at this notebook.
+## Read the below for an overview of the science. 
+
+## To get started with the data itself have a look at [this notebook](data_handling.ipynb).
 
 ___
 
