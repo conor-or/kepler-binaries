@@ -2,6 +2,8 @@
 
 In this project we'll hunt for planets orbiting binary stars using the publicly available Kepler data. We've got the data for __50 eclipsing binary stars__. Some number of these binary stars are known to have planets: _it's up to you to find out which!_
 
+## Download these materials with [this link](https://github.com/conor-or/kepler-binaries/archive/master.zip)
+
 ## Read the below for an overview of the science. 
 
 ## To get started with the data itself have a look at [this notebook](data_handling.ipynb).
@@ -63,3 +65,14 @@ These are my _suggested_ steps for the project to see if we can find some planet
 4. From the plot, see if you can see a pattern (should look almost sinusoidal). If the pattern is there then it indicates the presence of a planet.
 5. Repeat on all systems and make a guess as to which have planets and which don't.
 6. Compare this to the master list which I'll keep and see what % correct you are. We can refine the method after this stage to improve your predictions.
+
+To help you get started and to check your results, below are the true periods and presence of planets (1 for a planet being there, 0 for not) for some of the systems. __Between 15 and 25 of the 50 systems have planets__.
+
+| ID | Period (days) | Planet? |
+| --- | --- | --- |
+| 12 | 0.801921 | 0 |
+| 22 | 0.559159 | 1 |
+| 29 | 0.932316 | 1 |
+| 43 | 0.536675 | 0 |
+| 49 | 0.892750 | 0 |
+
