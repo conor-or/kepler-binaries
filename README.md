@@ -18,7 +18,7 @@ The separation of the stars is so small that most of the time binary systems act
 
 If the orbital plane of the two stars is lined up with our line of sight then we'll see the binaries eclipse each other twice per orbit. Monitoring the light from a binary system over a long period of time and looking for eclipses allows us to study these sytems in great depth.
 
-[light curve](phased_curves/45.png)
+![light curve](phased_curves/45.png)
 
 The __light curve__ is the main way we'll be interacting with these binary systems. Above is an example light curve from one of the systems we'll be studying.
 
