@@ -24,5 +24,9 @@ Monitoring the light from a binary system over a long period of time and looking
 
 ![light curve](phased_curves/45.png)
 
-The __light curve__ is the main way we'll be interacting with these binary systems. Above is an example light curve from one of the systems we'll be studying. This is simply the brightness of the whole system over time. However, the above light curve has been __phased__. Phasing is an important part of this process: the Kepler spacecraft took one data point for each star every 29.4 minutes and the binaries typically have orbital periods of 6 hours to 18 hours. If we know the orbital period to a high precision then we can fold the light curve over so that each orbit appears on top of the previous and we obtain a high resolution light curve for one orbit. This is called __phasing__.
+The __light curve__ is the main way we'll be interacting with these binary systems. Above is an example light curve from one of the systems we'll be studying. This is simply the brightness of the whole system over time. However, the above light curve has been __phased__. 
+
+Phasing is an important part of this process: the Kepler spacecraft took one data point for each star every 29.4 minutes and the binaries typically have orbital periods of 6 hours to 18 hours. If we know the orbital period to a high precision then we can fold the light curve over so that each orbit appears on top of the previous and we obtain a high resolution light curve for one orbit. This is called __phasing__.
+
+In the above, the orbit starts at -0.5, the _primary eclipse_ occurs at 0.0 and the orbit finishes with the _secondary eclipse_ at 0.5.
 
