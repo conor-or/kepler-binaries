@@ -48,3 +48,16 @@ Phasing simply takes each data point (29.4 mins apart) and figures out where __i
 To properly phase the light curve we need to know the period very precisely. Checking the phased curve is then the best way to see if your period measurement is correct. To make precise eclipse timings we need to know: 1. the period of the system very precisely, 2. the time of the first eclipse very precisely.
 
 If we know these two things we can predict the time of each eclipse and see how far off the real eclipse was. This amount is the ETV (measured in minutes). We then plot the ETVs with time and look for a pattern. The pattern will tell you if there is a planet or not.
+
+___
+
+# 3. Project Suggestions
+
+These are my _suggested_ steps for the project to see if we can find some planets. We might not get that far or might do something else but this is a rough idea:
+
+1. Come up with a method for precisely measuring the orbital period of the binary systems. Whatever this is will probably also allow you to precisely measure the time of each eclipse. If we want to detect the presence of a planet we need this to be accurate to within a few minutes.
+2. Use the _measured_ period to predict eclipse times for each system.
+3. Compare the predicted eclipse times to the measured eclipse times and plot the difference over time.
+4. From the plot, see if you can see a pattern (should look almost sinusoidal). If the pattern is there then it indicates the presence of a planet.
+5. Repeat on all systems and make a guess as to which have planets and which don't.
+6. Compare this to the master list which I'll keep and see what % correct you are. We can refine the method after this stage to improve your predictions.
