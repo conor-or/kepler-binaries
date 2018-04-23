@@ -6,7 +6,7 @@ Read the below to get started and follow any links to papers for more detail on 
 
 ### Binary Stars
 
-About half of all stars exist in _binary star systems_. These are systems where stars of a similar size and mass orbit very closely around a common centre of mass.
+About half of all stars exist in [_binary star systems_](https://en.wikipedia.org/wiki/Binary_star). These are systems where stars of a similar size and mass orbit very closely around a common centre of mass.
 
 The formation and evolution of a binary system is very complicated and not really worth discussing here. The main thing to note is that planets are just as likely to form around these double stars as they are around single stars like our own
 
@@ -16,9 +16,13 @@ The separation of the stars is so small that most of the time binary systems act
 
 ### Eclipsing Binaries
 
-If the orbital plane of the two stars is lined up with our line of sight then we'll see the binaries eclipse each other twice per orbit. Monitoring the light from a binary system over a long period of time and looking for eclipses allows us to study these sytems in great depth.
+If the orbital plane of the two stars is lined up with our line of sight then we'll see the binaries eclipse each other twice per orbit. When each star eclipses the other the light from the system will drop by a small amount.
+
+Monitoring the light from a binary system over a long period of time and looking for eclipses allows us to study these sytems in great depth. 
+
+### Light Curves and Phasing
 
 ![light curve](phased_curves/45.png)
 
-The __light curve__ is the main way we'll be interacting with these binary systems. Above is an example light curve from one of the systems we'll be studying.
+The __light curve__ is the main way we'll be interacting with these binary systems. Above is an example light curve from one of the systems we'll be studying. This is simply the brightness of the whole system over time. However, the above light curve has been __phased__. Phasing is an important part of this process: the Kepler spacecraft took one data point for each star every 29.4 minutes and the binaries typically have orbital periods of 6 hours to 18 hours. If we know the orbital period to a high precision then we can fold the light curve over so that each orbit appears on top of the previous and we obtain a high resolution light curve for one orbit. This is called __phasing__.
 
