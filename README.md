@@ -2,7 +2,11 @@
 
 In this project we'll hunt for planets orbiting binary stars using the publicly available Kepler data. We've got the data for __50 eclipsing binary stars__. Some number of these binary stars are known to have planets: _it's up to you to find out which!_
 
-Read the below to get started and follow any links to papers for more detail on certain parts.
+Read the below for an overview of the science. To get started with the data itself have a look at this notebook.
+
+___
+
+# 1. Introduction
 
 ### Binary Stars
 
@@ -18,15 +22,29 @@ The separation of the stars is so small that most of the time binary systems act
 
 If the orbital plane of the two stars is lined up with our line of sight then we'll see the binaries eclipse each other twice per orbit. When each star eclipses the other the light from the system will drop by a small amount.
 
-Monitoring the light from a binary system over a long period of time and looking for eclipses allows us to study these sytems in great depth. 
+Monitoring the light from a binary system over a long period of time and looking for eclipses allows us to study these sytems in great depth. The deepest eclipse, where the smaller star blocks the larger one is called the _primary eclipse_ and vice versa for the _secondary eclipse_.
+
+### Eclipse Timing Variations (ETVs)
+
+The two binaries orbit a shared centre of mass. If there is a planet present in the system then the binaries centre of mass will wobble around a point as the small gravitational pull of the planet perturbs it. This perturbation will be very regular and we can measure it by precisely timing the eclipses of the binaries.
+
+As the planet orbits the system, the centre of mass of the binary will be pulled slightly towards the planet. This pull causes the eclipses to happen either slightly further away or slightly closer to us. The effect on the light travel time (typically a few minutes) causes the eclipses to happen either later or earlier than you would expect.
+
+This is called an eclipse timing variation. If these variations are regular or periodic it indicates the presence of a planet.
+___
+
+# 2. Method
 
 ### Light Curves and Phasing
 
 ![light curve](phased_curves/45.png)
 
-The __light curve__ is the main way we'll be interacting with these binary systems. Above is an example light curve from one of the systems we'll be studying. This is simply the brightness of the whole system over time. However, the above light curve has been __phased__. 
+The __light curve__ is the main way we'll be interacting with these binary systems. Above is an example light curve from one of the systems we'll be studying. This is simply the brightness of the whole system over time. Kepler collected data for thousands of eclipsing binaries by measuring the brightness of the binary system every 29.4 minutes over many years. The full light curves are then long sequences of sometimes sparse data. However, the above light curve has been __phased__. 
 
-Phasing is an important part of this process: the Kepler spacecraft took one data point for each star every 29.4 minutes and the binaries typically have orbital periods of 6 hours to 18 hours. If we know the orbital period to a high precision then we can fold the light curve over so that each orbit appears on top of the previous and we obtain a high resolution light curve for one orbit. This is called __phasing__.
+Phasing simply takes each data point (29.4 mins apart) and figures out where __in the orbital period__ the system was in that time. The orbits of the binaries we'll use are all between 6 hours and 18 hours. The _phase_ is defined as a number from -0.5 to 0.5 with the primary eclipse occuring at 0.0 (secondary eclipse then at -0.5 and 0.5).
 
-In the above, the orbit starts at -0.5, the _primary eclipse_ occurs at 0.0 and the orbit finishes with the _secondary eclipse_ at 0.5.
+### Eclipse Timing
 
+To properly phase the light curve we need to know the period very precisely. Checking the phased curve is then the best way to see if your period measurement is correct. To make precise eclipse timings we need to know: 1. the period of the system very precisely, 2. the time of the first eclipse very precisely.
+
+If we know these two things we can predict the time of each eclipse and see how far off the real eclipse was. This amount is the ETV (measured in minutes). We then plot the ETVs with time and look for a pattern. The pattern will tell you if there is a planet or not.
